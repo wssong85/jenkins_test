@@ -1,4 +1,6 @@
 
+# jenkins docker 설치
+
 1. docker run & localhost:5050 setting
 
 `docker run -d -p 5050:8080 --name jenkinsdocker -u 0 -v //var/run/docker.sock:/var/run/docker.sock  jenkinsci/blueocean`
