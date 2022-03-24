@@ -19,4 +19,4 @@ cd ./build/libs
 
 echo ">> execute discovery"
 
-java -jar discovery-0.0.1.jar
+nohup java -jar discovery-0.0.1.jar 2>&1 &
