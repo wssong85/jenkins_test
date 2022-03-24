@@ -1,16 +1,6 @@
 #!/bin/sh
-echo ">> project Build start!"
-echo ">> move discovey directory"
-cd ../discovery
-echo ">> give permission & gradlew clean build"
-chmod 755 gradlew
-./gradlew bootJar
-echo ">> move build/libs"
-cd ./build/libs
-echo ">> execute discovery"
-#nohup java -jar discovery-0.0.1.jar 2>&1 &
-java -jar discovery-0.0.1.jar
-echo ">> process end"
+
+nohup java -jar discovery-0.0.1.jar > /dev/null 2>&1 &
 
 #PNAME="discovery-0.0.1.jar"
 #PID=`ps -ef | grep ${PNAME} | grep -v grep | grep -v sh | awk '{printf($2);}'`
