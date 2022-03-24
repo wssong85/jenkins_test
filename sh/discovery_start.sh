@@ -1,5 +1,15 @@
 #!/bin/sh
 
+echo ">> project Build start!"
+echo ">> move discovey directory"
+cd ../discovery
+echo ">> give permission & gradlew clean build"
+chmod 755 gradlew
+./gradlew clear build
+echo ">> move build/libs"
+cd ./build/libs
+
+
 nohup java -jar discovery-0.0.1.jar > /dev/null 2>&1 &
 
 #PNAME="discovery-0.0.1.jar"
