@@ -8,8 +8,8 @@ chmod 755 gradlew
 echo ">> move build/libs"
 cd ./build/libs
 echo ">> execute discovery"
-
 nohup java -jar discovery-0.0.1.jar > /dev/null 2>&1 &
+echo ">> process end"
 
 #PNAME="discovery-0.0.1.jar"
 #PID=`ps -ef | grep ${PNAME} | grep -v grep | grep -v sh | awk '{printf($2);}'`
