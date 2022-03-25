@@ -1,4 +1,4 @@
-PID=pgrep -f discovery-0.0.1.jar
+PID=${pgrep -f discovery-0.0.1.jar}
 
 echo "Process ID: $PID"
 
