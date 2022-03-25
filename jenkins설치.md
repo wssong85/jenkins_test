@@ -21,7 +21,9 @@ docker 기반으로 자동으로 이미지를 다운받고 컨테이너를 생�
 
 2. read docker container & docker exec
 
-`docker ps -> docker exec -it 컨테이너아이디 /bin/bash`
+`docker ps -a`
+
+`docker exec -it 컨테이너아이디 /bin/bash`
 
 
 3. confirm password
