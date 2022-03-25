@@ -19,6 +19,8 @@ docker 기반으로 자동으로 이미지를 다운받고 컨테이너를 생�
 -v //var/run/docker.sock:/var/run/docker.sock : 컨테이너 안에서 docker 명령어를 쓰기 위한 sock 연결
 ```
 
+
+
 2. read docker container & docker exec
 
 `docker ps -a`
