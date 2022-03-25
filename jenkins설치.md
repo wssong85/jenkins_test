@@ -26,7 +26,6 @@ docker 기반으로 자동으로 이미지를 다운받고 컨테이너를 생�
 `docker exec -it 컨테이너아이디 /bin/bash`
 
 
-
 3. confirm password
 
 `cat /var/jenkins_home/secrets/initialAdminPassword`
