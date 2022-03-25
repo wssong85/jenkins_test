@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# PID=${pgrep -f discovery-0.0.1.jar}
-PID=`ps -ef | grep "discovery-0.0.1.jar" | grep -v 'grep' | awk '{print $1}'`
+PID=`pgrep -f discovery-0.0.1.jar`
+#PID=`ps -ef | grep "discovery-0.0.1.jar" | grep -v 'grep' | awk '{print $1}'`
 
 echo "Process ID: $PID"
 
